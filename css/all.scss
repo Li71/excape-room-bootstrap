@@ -2,6 +2,7 @@
 @import '../css/helpers/variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+
 * {
   font-family: 'Noto Sans TC', sans-serif;
 }
@@ -49,3 +50,18 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
+#view .card-body {
+  max-height: 200px;
+  min-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media (max-width:450px) {
+  #view .card-body{
+    max-height: unset;
+  }
+}
+
+
+
